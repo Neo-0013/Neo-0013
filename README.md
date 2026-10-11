@@ -159,24 +159,24 @@ My projects are rooted in formal physical and mathematical models:
 ### 1. Aerial Rotor Dynamics & Aerodynamic Power
 Modeled in [`uav-endurance-simulation`](https://github.com/Neo-0013/uav-endurance-simulation) using **Rankine-Froude Momentum Theory**:
 
-$$T = 2 ho A v_i^2 \implies v_i = \sqrt{rac{T}{2 ho A}}$$
+$$T = 2 \rho A v_i^2 \implies v_i = \sqrt{\frac{T}{2 \rho A}}$$
 
-$$P_{	ext{induced}} = T \cdot v_i = rac{T^{3/2}}{\sqrt{2 ho A}}, \quad P_{	ext{profile}} = rac{1}{8} ho C_{D0} A (\Omega R)^3$$
+$$P_{\text{induced}} = T \cdot v_i = \frac{T^{3/2}}{\sqrt{2 \rho A}}, \quad P_{\text{profile}} = \frac{1}{8} \rho C_{D0} A (\Omega R)^3$$
 
 ### 2. Barometric Altitude & International Standard Atmosphere (ISA)
-Troposphere density scaling under temperature lapse rates ($L = 0.0065 	ext{ K/m}$):
+Troposphere density scaling under temperature lapse rates ($L = 0.0065 \text{ K/m}$):
 
-$$ho(h) = ho_0 \left(1 - rac{L \cdot h}{T_0}ight)^{\left(rac{g M}{R L} - 1ight)}$$
+$$\rho(h) = \rho_0 \left(1 - \frac{L \cdot h}{T_0}\right)^{\left(\frac{g M}{R L} - 1\right)}$$
 
 ### 3. Metric-Space Biometric Verification
 Formulated in [`smart-door-system`](https://github.com/Neo-0013/smart-door-system) via deep embedding projection $\mathbf{f}(x) \in \mathbb{R}^{128}$ optimized with Triplet Loss:
 
-$$\mathcal{L} = \max\left( \|\mathbf{f}(x_a) - \mathbf{f}(x_p)\|_2^2 - \|\mathbf{f}(x_a) - \mathbf{f}(x_n)\|_2^2 + lpha, \; 0 ight)$$
+$$\mathcal{L} = \max\left( \|\mathbf{f}(x_a) - \mathbf{f}(x_p)\|_2^2 - \|\mathbf{f}(x_a) - \mathbf{f}(x_n)\|_2^2 + \alpha, \; 0 \right)$$
 
 ### 4. Vulnerability Impact Quantification (CVSS v3.1 Base Metric)
 Implemented in [`UNLOX-Projects`](https://github.com/Neo-0013/UNLOX-Projects) for cloud vulnerability assessment:
 
-$$	ext{ISS} = 1 - \prod_{m \in \{	ext{Conf}, 	ext{Integ}, 	ext{Avail}\}} (1 - 	ext{Impact}_m)$$
+$$\text{ISS} = 1 - \prod_{m \in \{\text{Conf}, \text{Integ}, \text{Avail}\}} (1 - \text{Impact}_m)$$
 
 ---
 
